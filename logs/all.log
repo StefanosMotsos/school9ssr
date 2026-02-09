@@ -1,0 +1,100 @@
+2026-02-09 19:42:10 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-09 19:42:10 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.8 with PID 7348 (C:\Users\stefa\IdeaProjects\schoolapp9ssr\build\classes\java\main started by stef in C:\Users\stefa\IdeaProjects\schoolapp9ssr)
+ 2026-02-09 19:42:10 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-09 19:42:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-09 19:42:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+ 2026-02-09 19:42:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-09 19:42:12 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2468 ms
+ 2026-02-09 19:42:13 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-09 19:42:13 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-09 19:42:13 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-09 19:42:14 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+ 2026-02-09 19:42:14 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+ 2026-02-09 19:42:14 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-09 19:42:16 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-09 19:42:16 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-09 19:42:18 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-09 19:42:18 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 8.743 seconds (process running for 9.401)
+ 2026-02-09 19:42:28 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-09 19:42:28 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+ 2026-02-09 19:42:54 ERROR g.a.c.s.service.TeacherService - Save failed for teacher with vat=123456789: Region id=1 invalid
+ 2026-02-09 19:42:54 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "teacher-success": Exception evaluating SpringEL expression: "teacherReadOnlyDTO.uuid" (template: "teacher-success" - line 24, col 34)
+ org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "teacherReadOnlyDTO.uuid" (template: "teacher-success" - line 24, col 34)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'uuid' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:225)
+2026-02-09 20:10:15 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-09 20:10:15 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.8 with PID 9796 (C:\Users\stefa\IdeaProjects\schoolapp9ssr\build\classes\java\main started by stef in C:\Users\stefa\IdeaProjects\schoolapp9ssr)
+ 2026-02-09 20:10:15 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-09 20:10:16 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-09 20:10:16 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+ 2026-02-09 20:10:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-09 20:10:17 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1985 ms
+ 2026-02-09 20:10:18 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9ssr?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-09 20:10:18 INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `school9ssr`.`flyway_schema_history` does not exist yet
+ 2026-02-09 20:10:18 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.033s)
+ 2026-02-09 20:10:19 INFO  org.flywaydb.core.Flyway - All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+ 2026-02-09 20:10:19 INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `school9ssr`.`flyway_schema_history` ...
+ 2026-02-09 20:10:19 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9ssr`: << Empty Schema >>
+ 2026-02-09 20:10:19 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `school9ssr` to version "1 - initial schema"
+ 2026-02-09 20:10:19 INFO  o.f.core.internal.command.DbMigrate - Migrating schema `school9ssr` to version "2 - insert regions"
+ 2026-02-09 20:10:19 INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema `school9ssr`, now at version v2 (execution time 00:00.169s)
+ 2026-02-09 20:10:19 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-09 20:10:19 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-09 20:10:20 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-09 20:10:20 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+ 2026-02-09 20:10:20 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+ 2026-02-09 20:10:20 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-09 20:10:22 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-09 20:10:22 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-09 20:10:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-09 20:10:23 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 9.35 seconds (process running for 9.834)
+ 2026-02-09 20:10:25 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-09 20:10:25 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+ 2026-02-09 20:10:42 INFO  g.a.c.s.service.TeacherService - Teacher with vat=11111111111 saved successfully
+ 2026-02-09 20:15:00 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-02-09 20:15:00 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.8 with PID 9776 (C:\Users\stefa\IdeaProjects\schoolapp9ssr\build\classes\java\main started by stef in C:\Users\stefa\IdeaProjects\schoolapp9ssr)
+ 2026-02-09 20:15:00 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2026-02-09 20:15:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-02-09 20:15:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+ 2026-02-09 20:15:02 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-02-09 20:15:02 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2091 ms
+ 2026-02-09 20:15:03 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/school9ssr?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-02-09 20:15:04 INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.100s)
+ 2026-02-09 20:15:05 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `school9ssr`: 2
+ 2026-02-09 20:15:05 INFO  o.f.core.internal.command.DbMigrate - Schema `school9ssr` is up to date. No migration necessary.
+ 2026-02-09 20:15:05 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+ 2026-02-09 20:15:05 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-02-09 20:15:05 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-02-09 20:15:06 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+ 2026-02-09 20:15:06 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+ 2026-02-09 20:15:06 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-02-09 20:15:07 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-02-09 20:15:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-02-09 20:15:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-02-09 20:15:09 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 10.043 seconds (process running for 10.571)
+ 2026-02-09 20:15:09 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-02-09 20:15:09 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+ 2026-02-09 20:15:37 INFO  g.a.c.s.service.TeacherService - Teacher with vat=11111111112 saved successfully
+ 
