@@ -37,7 +37,7 @@ public class TeacherController {
         }
 
         // save teacher to DB
-        TeacherReadOnlyDTO teacherReadOnlyDTO = new TeacherReadOnlyDTO("acfd-1234", "Αθανάσιος", "Ανδρούτσος");
+        TeacherReadOnlyDTO teacherReadOnlyDTO = new TeacherReadOnlyDTO("acfd-1234", "Στέφανος", "Μότσος");
         //model.addAttribute("teacherReadOnlyDTO", teacherReadOnlyDTO);
 
         // PRG - Post-Redirect-Get

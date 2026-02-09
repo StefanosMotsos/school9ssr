@@ -16,8 +16,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service                        //IoC Container
-@RequiredArgsConstructor        //
-@Slf4j                          //
+@RequiredArgsConstructor        // DI
+@Slf4j                          // Logback
 public class TeacherService implements ITeacherService {
 
     private final TeacherRepository teacherRepository;
