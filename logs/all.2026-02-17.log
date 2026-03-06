@@ -1,9 +1,0 @@
-2026-02-17 16:53:34 ERROR o.s.boot.SpringApplication - Application run failed
- java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.model.processor.FileCollisionAnalyser - Collision detected. Skipping initialization of appender named [SQLLogs]
-ERROR in ch.qos.logback.core.model.processor.FileCollisionAnalyser - In appender [SQLLogs] option 'fileNamePattern' has the same value 'logs/sql.%d{yyyy-MM-dd}.log' as that set for appender [HikariLogs] defined earlier
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
-Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.model.processor.FileCollisionAnalyser - Collision detected. Skipping initialization of appender named [SQLLogs]
-ERROR in ch.qos.logback.core.model.processor.FileCollisionAnalyser - In appender [SQLLogs] option 'fileNamePattern' has the same value 'logs/sql.%d{yyyy-MM-dd}.log' as that set for appender [HikariLogs] defined earlier
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:289)
